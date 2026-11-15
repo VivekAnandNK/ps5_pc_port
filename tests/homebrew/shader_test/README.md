@@ -46,3 +46,4 @@ void main() {
 
 ## Pass Criteria
 `spirv-val` reports no errors. Vulkan renders expected output for each shader.
+

@@ -1,0 +1,39 @@
+name: Research Note
+description: Share a technical finding, reverse engineering result, or architecture insight
+labels: ["research", "documentation"]
+body:
+  - type: textarea
+    id: finding
+    attributes:
+      label: What did you find?
+      description: Describe the technical finding clearly
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Research area
+      options:
+        - PS5 ELF format
+        - Orbis OS syscalls
+        - GPU / Oberon ISA
+        - Shader translation
+        - Memory architecture
+        - I/O subsystem
+        - Audio (Tempest)
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources / references
+      description: Link any papers, write-ups, videos, or open-source code that informed this finding
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact on the project
+      description: Which module does this affect? Does it change our implementation approach?

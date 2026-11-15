@@ -41,3 +41,4 @@ cd ps5-playground/example-hello
 make
 # → outputs a .elf file in PS5 format — feed this into our elf_parser
 ```
+

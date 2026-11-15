@@ -1,0 +1,49 @@
+name: Feature Request
+description: Propose a new module, capability, or improvement
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: What do you want to build or improve?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Which component does this affect?
+      options:
+        - elf-parser
+        - shader-compiler
+        - syscall-stubs
+        - memory-manager
+        - vulkan-backend
+        - dynamic-jit
+        - new module
+        - docs
+        - ci
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why is this needed?
+      description: What does it unblock? Which test or game scenario requires it?
+    validations:
+      required: true
+
+  - type: textarea
+    id: approach
+    attributes:
+      label: Proposed approach
+      description: How would you implement it? Any reference projects or papers?
+
+  - type: checkboxes
+    id: legal
+    attributes:
+      label: Legal check
+      options:
+        - label: This feature does not require committing copyrighted game files or Sony SDK code
+          required: true
