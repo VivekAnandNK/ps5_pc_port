@@ -47,3 +47,4 @@ body:
       options:
         - label: This feature does not require committing copyrighted game files or Sony SDK code
           required: true
+

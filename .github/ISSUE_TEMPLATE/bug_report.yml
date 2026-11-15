@@ -68,3 +68,4 @@ body:
       label: Test binary used
       description: Which homebrew / test ELF triggered the bug? (Never share commercial game files)
       placeholder: "ps5-playground/example-hello"
+

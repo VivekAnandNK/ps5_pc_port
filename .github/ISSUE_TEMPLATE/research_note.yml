@@ -37,3 +37,4 @@ body:
     attributes:
       label: Impact on the project
       description: Which module does this affect? Does it change our implementation approach?
+
