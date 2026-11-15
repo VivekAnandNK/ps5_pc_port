@@ -116,6 +116,27 @@ ps5_pc_port/
 
 ---
 
+## 🧪 Test Binaries — Where to Get PS5 ELFs (Legal)
+
+**Do NOT use pirated game files.** Use these free, open-source sources instead:
+
+| Source | URL | What it gives you |
+|---|---|---|
+| **ps5-payload-sdk** | https://github.com/john-tornblom/ps5-payload-sdk | Cross-compiler: build real PS5 ELFs on your PC |
+| **ps5-playground** | https://github.com/john-tornblom/ps5-playground | Small test payloads in PS5 ELF format |
+| **PS5 Homebrew Store** | https://github.com/LightningMods/PS5-Store | Full homebrew apps (real PS5 binaries, open source) |
+| **shadPS4 test suite** | https://github.com/shadps4-emu/shadPS4 | GPU + syscall test ROMs for PS4/PS5 |
+
+### Test progression (see `tests/homebrew/`)
+```
+Test 1: hello_world   → ELF loader + sceKernelWrite stub
+Test 2: syscall_test  → threading, memory, file I/O stubs
+Test 3: memory_test   → unified memory emulation
+Test 4: shader_test   → Oberon GPU ISA → SPIR-V → Vulkan
+```
+
+---
+
 ## 📚 Key Reference Projects to Study
 
 | Project | What to learn from it |
